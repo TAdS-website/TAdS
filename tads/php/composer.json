@@ -1,0 +1,10 @@
+{
+    "name": "tads/tads",
+    "description": "Website for Technology Adventure Society, IIT Kharagpur",
+    "type": "project",
+    "license": "UNLICENSED",
+    "minimum-stability": "dev",
+    "require": {
+        "unreal4u/telegram-api": "~3.4"
+    }
+}
