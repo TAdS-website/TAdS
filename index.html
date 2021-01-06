@@ -46,6 +46,12 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/grayscale.min.css" rel="stylesheet">
 
+  <!-- Animation -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 
 <body>
@@ -149,11 +155,11 @@
       </div>
 
       <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0 scroll">
+        <div class="col-lg-6 wow slideInLeft">
           <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 wow slideInLeft">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
@@ -167,17 +173,34 @@
       </div>
 
       <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
+      <div class="row justify-content-center no-gutters scroll">
+        <div class="col-lg-6 slideInRight">
           <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
         </div>
-        <div class="col-lg-6 order-lg-first">
+        <div class="col-lg-6 order-lg-first wow slideInRight">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h3 class="text-white">Mountain Treks</h3>
                 <p class="mb-0 text-white-50">We organise Treks in the holy Himalyas thrice in a year during Durga Puja Holidays, Summer and Winter Breaks</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Three Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0 scroll">
+        <div class="col-lg-6 wow slideInLeft">
+          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+        </div>
+        <div class="col-lg-6 wow slideInLeft">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h3 class="text-white">Indoor Events</h3>
+                <p class="mb-0 text-white-50">We organise ADVENTURE WEEKENDS, RAPPELING / ZIPLINE that includes many fun games like Paintball, Laser Tag, Bull Ride, Go-Karting, Archery, Human Foosball</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
           </div>
@@ -357,9 +380,9 @@
             </ul>
           </div>
         </div>
-</div>
+      </div>
 
-<div class="row">
+      <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded" src="img/team/simran1.jpg" alt="" style="width: 100%; height: auto;">
@@ -408,9 +431,7 @@
             </ul>
           </div>
         </div>
-</div>
-
-
+      </div>
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
           </p>
@@ -520,6 +541,13 @@
   <script src="contactform/contactform.js"></script>
   <script src="js/main.js"></script>
 
+  <!-- Scripts For Animation -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/full.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 
 
