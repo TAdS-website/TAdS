@@ -501,42 +501,76 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
+
   width: 100%;
+
   height: auto;
+
   background: #f7f7f7;
+
   padding-top: 190px;
+
 }
+
 
 #about .div-img-bg {
+
+  width: 100%;
+
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+
 }
+
 
 #about .div-img-bg .about-img img {
+
   width: 100%;
+
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
+
+  margin-top: 0px;
+
+  margin-left: 0px;
+
   height: 400px;
+
   object-fit: cover;
-}
-#about .about-descr .p-heading1 {
- /* font-family: 'Playfair Display', serif;*/
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 40;
-}
-#about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: left;
-  margin-top: 40;
+
 }
 
-#about .about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
+#about .about-descr .p-heading1 {
+
+ /* font-family: 'Playfair Display', serif;*/
+
+  font-size: 40px;
+
+  text-align: center;
+
+  margin-bottom: 40;
+
+}
+
+#about .about-descr .p-heading {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 28px;
+
   text-align: left;
+
+  margin-top: 40;
+
+}
+
+
+#about .about-descr .separator {
+
+  max-width: 80%;
+
+  margin-bottom: 0;
+
+  text-align: left;
+
 }
 
 
