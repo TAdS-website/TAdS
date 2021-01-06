@@ -1,0 +1,50 @@
+<?php
+
+namespace unreal4u\TelegramAPI\tests;
+
+use PHPUnit_Framework_TestCase as TestCase;
+#use PHPUnit\Framework\TestCase;
+use unreal4u\TelegramAPI\Telegram\Methods\GetMe;
+use unreal4u\TelegramAPI\tests\Mock\MockTgLog;
+
+class TgLogTest extends TestCase
+{
+    /**
+     * @var MockTgLog
+     */
+    private $tgLog;
+
+    /**
+     * Prepares the environment before running a test.
+     */
+    protected function setUp()
+    {
+        parent::setUp();
+        $this->tgLog = new MockTgLog('TEST-TEST');
+    }
+
+    /**
+     * Cleans up the environment after running a test.
+     */
+    protected function tearDown()
+    {
+        $this->tgLog = null;
+        parent::tearDown();
+    }
+
+    public function testComposeApiMethodUrl()
+    {
+        $this->assertSame(
+            'https://api.telegram.org/botTEST-TEST/getMe',
+            $this->tgLog->composeApiMethodUrl(new GetMe())
+        );
+    }
+
+    /*public function testBuildMultipartFormData(array $data, string $fileKeyName, $stream = null, array $expected = [])
+    {
+        $call = new \ReflectionMethod('unreal4u\\TelegramAPI\\TgLog', 'buildMultipartFormData');
+        $call->setAccessible(true);
+        $result = $call->invokeArgs(new \unreal4u\TelegramAPI\TgLog('TEST-TEST'), [$data, $fileKeyName, $stream]);
+        $this->assertEquals($expected, $result);
+    }*/
+}

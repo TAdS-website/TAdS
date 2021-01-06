@@ -45,6 +45,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
 
   <!-- Animation -->
   <link
@@ -437,12 +438,6 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          </p>
-          <p class="large text-muted">Are you Crazy about our Adventure Activities? Feel free to connect with any of them for more details.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -452,9 +447,60 @@
   <section id="signup" class="signup-section">
     <div class="container">
       <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-light">Are you Crazy about our Adventure Activities? Feel free to connect with any of them for more details.</p>
+        </div>
+      </div>
+      <div class="row mt-4">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h1 class="text-white mb-1">Contact Us!</h1>
+          <div class="background">
+            <div class="container">
+              <div class="screen">
+                <div class="screen-header">
+                  <div class="screen-header-left">
+                    <div class="screen-header-button bg-danger"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
+                  </div>
+                  <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                  </div>
+                </div>
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h1 class="text-white mb-1">Contact Us!</h1>
+                  </div>
+                  <form action="php/contact.php" method="POST">
+                    <div class="screen-body-item">
+                      <div class="app-form">
+                        <div class="app-form-group">
+                          <input class="app-form-control" type="text" placeholder="NAME" name="Name" id="Name">
+                        </div>
+                        <div class="app-form-group">
+                          <input class="app-form-control" placeholder="EMAIL" type="email" name="Email" id="Email">
+                        </div>
+                        <div class="app-form-group">
+                          <input class="app-form-control" placeholder="CONTACT NO" type="number" name="Contact" id="Contact">
+                        </div>
+                        <div class="app-form-group message">
+                          <input class="app-form-control" placeholder="MESSAGE" type="text" name="Message" id="Message">
+                        </div>
+
+                        <div class="app-form-group buttons">
+                          <button class="app-form-button" type="submit" name="contact">SEND</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>

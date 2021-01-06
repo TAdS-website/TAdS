@@ -1,0 +1,9 @@
+/vendor/
+/.vagrant/
+
+/examples/conf.php
+/tests/report/
+/phpunit.xml
+
+/.idea
+.DS_Store
